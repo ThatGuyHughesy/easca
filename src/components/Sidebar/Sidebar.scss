@@ -1,6 +1,6 @@
 /* Component - Easca Sidebar */
 
-@import "../../assets/scss/variables";
+@import '../../assets/scss/variables';
 
 .easca-sidebar {
   background-color: $blue-grey-900;
@@ -48,7 +48,7 @@
   }
 
   .btn::after {
-    content: "";
+    content: '';
     display: inline-block;
     position: relative;
     height: 6px;
@@ -71,6 +71,10 @@
   }
 
   li.active {
-    background-color: scale-color($blue-grey-900, $lightness: -20%, $saturation: 10%);
+    background-color: scale-color(
+      $blue-grey-900,
+      $lightness: -20%,
+      $saturation: 10%
+    );
   }
 }
