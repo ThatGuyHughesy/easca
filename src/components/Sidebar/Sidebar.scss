@@ -1,0 +1,76 @@
+/* Component - Easca Sidebar */
+
+@import "../../assets/scss/variables";
+
+.easca-sidebar {
+  background-color: $blue-grey-900;
+  width: 260px;
+
+  a {
+    color: $blue-grey-200;
+
+    &:hover {
+      color: $white;
+      text-decoration: none !important;
+      border-color: transparent !important;
+    }
+  }
+
+  .brand {
+    background-color: $blue-500;
+    height: 60px;
+    line-height: 60px;
+    color: $white;
+    text-align: center;
+  }
+
+  .nav {
+    padding: 10px;
+  }
+
+  .nav-item {
+    font-size: 14px;
+  }
+
+  .nav-link {
+    padding: 10px 15px;
+  }
+
+  .btn {
+    background-color: transparent !important;
+    color: $blue-grey-200;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: left;
+    padding: 10px 15px;
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  .btn::after {
+    content: "";
+    display: inline-block;
+    position: relative;
+    height: 6px;
+    width: 6px;
+    border-style: solid;
+    border-width: 2px 2px 0 0;
+    transform: rotate(-45deg);
+    vertical-align: middle;
+    top: -1px;
+    left: 10px;
+  }
+
+  .btn.collapsed::after {
+    top: -3px;
+    transform: rotate(135deg);
+  }
+
+  .dropdown {
+    margin-left: 1rem;
+  }
+
+  li.active {
+    background-color: scale-color($blue-grey-900, $lightness: -20%, $saturation: 10%);
+  }
+}
