@@ -1,14 +1,24 @@
 {
   "name": "easca",
-  "version": "0.1.0",
+  "version": "0.1.0-SNAPSHOT",
+  "description": "A simple Vue theme and component library based on Bootstrap",
   "private": true,
+  "author": "Conor Hughes <hello@conorhughes.me>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThatGuyHughesy/easca.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ThatGuyHughesy/easca/issues"
+  },
+  "homepage": "https://github.com/ThatGuyHughesy/easca#readme",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "core-js": "^2.6.5",
     "vue": "^2.6.10"
   },
   "devDependencies": {
@@ -18,9 +28,7 @@
     "@vue/eslint-config-prettier": "^5.0.0",
     "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0",
-    "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-vue": "^5.0.0",
-    "prettier": "^1.18.2",
     "vue-template-compiler": "^2.6.10"
   }
 }
