@@ -1,9 +1,18 @@
 language: node_js
 node_js:
-  - "10.5"
+  - '10.5'
 install:
   - yarn
 before_script:
   - yarn run lint
 script:
   - yarn run test
+  - yarn run docs:build
+deploy:
+  provider: pages
+  skip-cleanup: true
+  local_dir: docs/.vuepress/dist
+  github-token: $GITHUB_TOKEN
+  keep-history: true
+  on:
+    branch: master

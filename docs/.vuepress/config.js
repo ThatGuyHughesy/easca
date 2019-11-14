@@ -1,4 +1,5 @@
 module.exports = {
+  base: '/easca/',
   locales: {
     '/': {
       lang: 'en-US',
@@ -6,7 +7,6 @@ module.exports = {
       description: 'A simple Vue theme and component library based on Bootstrap'
     }
   },
-
   themeConfig: {
     repoLabel: 'Contribute!',
     repo: 'https://github.com/ThatGuyHughesy/easca',
@@ -20,7 +20,6 @@ module.exports = {
         label: 'English',
         selectText: 'Languages',
         lastUpdated: 'Last Updated',
-        // service worker is configured but will only register in production
         serviceWorker: {
           updatePopup: {
             message: 'New content is available.',
