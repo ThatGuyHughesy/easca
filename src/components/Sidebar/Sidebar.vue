@@ -1,6 +1,6 @@
 <template>
   <aside class="easca-sidebar">
-    <div class="brand">Easca</div>
+    <div class="brand">{{ this.title }}</div>
     <b-nav vertical>
       <slot></slot>
     </b-nav>
@@ -11,7 +11,13 @@
 import "./Sidebar.scss";
 
 export default {
-  name: "easca-sidebar"
+  name: "easca-sidebar",
+  props: {
+    title: {
+      type: String,
+      default: "Easca"
+    }
+  }
 };
 </script>
 

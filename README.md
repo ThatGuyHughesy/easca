@@ -1,5 +1,9 @@
 # Easca
 
+A simple Vue theme and component library based on Bootstrap
+
+[![Build Status](https://travis-ci.org/ThatGuyHughesy/easca.svg?branch=master)](https://travis-ci.org/ThatGuyHughesy/easca)
+
 ## Project setup
 
 ```
@@ -28,6 +32,20 @@ yarn run test
 
 ```
 yarn run lint
+```
+
+## Documentation
+
+### Compiles and hot-reloads for development
+
+```
+yarn run docs:dev
+```
+
+### Compiles and minifies for production
+
+```
+yarn run docs:build
 ```
 
 ### Customize configuration

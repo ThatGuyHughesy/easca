@@ -1,0 +1,8 @@
+.component-demo {
+  margin: 1.25rem 0;
+  border: 1px solid #eaecef;
+}
+
+.theme-default-content:not(.custom) p {
+  margin-top: 1em;
+}
