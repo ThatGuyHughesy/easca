@@ -1,6 +1,6 @@
 # Easca
 
-A simple Vue theme and component library based on Bootstrap
+A simple Vue theme and component library built on Bootstrap
 
 [![Build Status](https://travis-ci.org/ThatGuyHughesy/easca.svg?branch=master)](https://travis-ci.org/ThatGuyHughesy/easca)
 

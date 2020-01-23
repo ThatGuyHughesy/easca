@@ -1,10 +1,10 @@
 /* Component - Easca Sidebar */
 
-@import '../../assets/scss/variables';
+@import "../../assets/scss/variables";
 
 .easca-sidebar {
   background-color: $blue-grey-900;
-  width: 260px;
+  width: 18rem;
 
   a {
     color: $blue-grey-200;
@@ -18,47 +18,74 @@
 
   .brand {
     background-color: $blue-500;
-    height: 60px;
-    line-height: 60px;
+    height: 4rem;
+    line-height: 4rem;
+    font-size: 1.3rem;
     color: $white;
     text-align: center;
   }
 
   .nav {
-    padding: 10px;
+    padding: 0;
   }
 
   .nav-item {
-    font-size: 14px;
+    font-size: 1rem;
+
+    i {
+      font-size: 1rem;
+      margin-right: 0.5rem;
+    }
   }
 
   .nav-link {
-    padding: 10px 15px;
+    padding: 1rem 1.5rem;
+
+    &:hover {
+      background-color: scale-color($blue-grey-900, $lightness: -10%, $saturation: 10%);
+      margin: 0 !important;
+      border: 0 !important;
+    }
+
+    &.active {
+      background-color: scale-color($blue-grey-900, $lightness: -20%, $saturation: 10%);
+      color: $white;
+    }
   }
 
   .btn {
     background-color: transparent !important;
     color: $blue-grey-200;
-    font-size: 14px;
+    font-size: 1rem;
     font-weight: 500;
     text-align: left;
-    padding: 10px 15px;
+    padding: 1rem 1.5rem;
     border: none !important;
+    border-radius: 0;
     box-shadow: none !important;
+
+    &:hover {
+      background-color: scale-color($blue-grey-900, $lightness: -10%, $saturation: 10%) !important;
+    }
+
+    > i {
+      font-size: 1rem;
+      margin-right: 8px;
+    }
   }
 
   .btn::after {
-    content: '';
+    content: "";
     display: inline-block;
     position: relative;
-    height: 6px;
-    width: 6px;
+    height: 0.4rem;
+    width: 0.4rem;
     border-style: solid;
     border-width: 2px 2px 0 0;
     transform: rotate(-45deg);
     vertical-align: middle;
     top: -1px;
-    left: 10px;
+    left: 0.8rem;
   }
 
   .btn.collapsed::after {
@@ -67,14 +94,8 @@
   }
 
   .dropdown {
-    margin-left: 1rem;
-  }
-
-  li.active {
-    background-color: scale-color(
-      $blue-grey-900,
-      $lightness: -20%,
-      $saturation: 10%
-    );
+    .nav-link {
+      padding-left: 3rem;
+    }
   }
 }

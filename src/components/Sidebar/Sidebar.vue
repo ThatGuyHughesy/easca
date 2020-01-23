@@ -1,8 +1,12 @@
 <template>
   <aside class="easca-sidebar">
-    <div class="brand">{{ this.title }}</div>
+    <div class="brand">
+      <!-- @slot Use this slot title -->
+      <slot name="title"></slot>
+    </div>
     <b-nav vertical>
-      <slot></slot>
+      <!-- @slot Use this slot navigation -->
+      <slot name="navigation"></slot>
     </b-nav>
   </aside>
 </template>
@@ -12,10 +16,15 @@ import "./Sidebar.scss";
 
 export default {
   name: "easca-sidebar",
-  props: {
-    title: {
-      type: String,
-      default: "Easca"
+  mounted: () => {
+    var dropdowns = document.getElementsByClassName("dropdown");
+    for (const dropdown of dropdowns) {
+      for (const nav_item of dropdown.children) {
+        if (nav_item.getElementsByClassName("nav-link")[0].classList.contains("active")) {
+          dropdown.style.removeProperty("display");
+          dropdown.classList.add("show");
+        }
+      }
     }
   }
 };
