@@ -14,7 +14,17 @@ The component &lt;easca-sidebar&gt; is a wrapper that positions branding, naviga
 
 ## Slots
 
-### default
+### title
+
+```javascript
+<template v-slot:title>...</template>
+```
+
+### navigation
+
+```javascript
+<template v-slot:navigation>...</template>
+```
 
 For navigation links use &lt;b-nav-item&gt;.
 
